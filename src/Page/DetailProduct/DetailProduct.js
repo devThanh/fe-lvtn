@@ -284,7 +284,9 @@ function DetailProduct() {
                     {property && property.info.number_bedrooms}
                   </div>
                 </Col>
-                <Col md={4}></Col>
+                <Col md={4}>
+                <Button outline color="primary" class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore text-decoration-none text-white">Share</a></Button>
+                </Col>
                 <Col
                   md={2}
                   className="d-flex align-items-center detail-info-save"
