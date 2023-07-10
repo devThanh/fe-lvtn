@@ -1,0 +1,74 @@
+.container-comment {
+  border: 1px solid #ddd;
+  .comment-content {
+    outline: none;
+    background-color: var(--bg-content);
+  }
+}
+.comment-check-login {
+  border: 1px solid #ddd;
+}
+.container-list-comment {
+  border: 1px solid #ddd;
+  .list-comment-name {
+    color: #5488c7;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .list-comment-date {
+    color: #9b9b9b;
+  }
+  .list-comment-handle {
+    cursor: pointer;
+    // :hover {
+    //   border-radius: 50%;
+    //   background: rgba(0, 0, 0, 0.1);
+    // }
+  }
+  .list-comment-block {
+    margin-top: 16px;
+    margin-left: 40px;
+
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    // cursor: pointer;
+    // :hover {
+    //   border-radius: 50%;
+    //   background: rgba(0, 0, 0, 0.1);
+    // }
+    .block-item {
+      cursor: pointer;
+    }
+    :hover {
+      background: var(--bg-content);
+    }
+  }
+  .list-comment-content {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .list-comment-click {
+    font-size: 20px;
+    cursor: pointer;
+    :hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  .list-comment-click-reply {
+    font-size: 20px;
+    cursor: pointer;
+    :hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  .list-comment-totalRep {
+    .totalRep-click {
+      cursor: pointer;
+      :hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
