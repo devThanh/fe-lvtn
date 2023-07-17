@@ -13,24 +13,27 @@ import { Row, Col, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function SignUp() {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   const [message, setMessage] = useState("");
 
   const handleFB = async () => {
-    try {
-      const res = await SignUpApi.signUpWithFB();
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
+    window.open("http://lvtn-bds.onrender.com/user/facebook");
+    // try {
+    //   const res = await SignUpApi.signUpWithFB();
+    //   console.log(res);
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   const handleGG = async () => {
-    try {
-      const res = await SignUpApi.signUpWithGG();
-    } catch (error) {
-      console.log(error);
-    }
+    window.open("http://lvtn-bds.onrender.com/user/google");
+
+    // try {
+    //   const res = await SignUpApi.signUpWithGG();
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   const formik = useFormik({
@@ -57,9 +60,7 @@ function SignUp() {
 
         if (res.data.message) {
           setMessage(res.data.message);
-          if (
-            res.data.message.search("Please check mail to verify your account")
-          ) {
+          if (res.data.message == "Please check mail to verify your account") {
             sessionStorage.setItem("email-sign-up", values.email);
             navigate("/xac-nhan-dang-ky");
           }

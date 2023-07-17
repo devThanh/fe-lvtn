@@ -206,7 +206,7 @@ function Comments(props) {
               <Col className="ps-3" md={10}>
                 <Row className="list-comment-name">{comment.name}</Row>
                 <Row className="list-comment-date">
-                  {comment.created_date.slice(0, 10)}
+                  {comment.created_date}
                 </Row>
               </Col>
               <Col sm={1} className="position-relative">
